@@ -10,3 +10,7 @@ Trasform Snomed expression constraint to MongoDB query
 
     db.getCollection('snomed').find(query).then(...);
 ```
+
+### Thanks to
+This package is just an isolation of the query builder with some library updates. 
+Thanks to https://github.com/IHTSDO/sct-snapshot-rest-api
