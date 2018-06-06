@@ -1,0 +1,30 @@
+{
+  "name": "snomed-expression-builder",
+  "version": "0.1.0",
+  "description": "Snomed Expresssion to MongoQuery",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "apg -i utils/Expression-ABNF.txt -o src/grammar.js",
+    "download": "node ./utils/download.js",
+    "build": ""
+  },
+  "keywords": [
+    "snomed",
+    "mongo",
+    "expression",
+    "query"
+  ],
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/liquid36/snomed-expression-builder"
+  },
+  "author": "Mariano Botta <marianoabotta@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "apg": "^3.1.1"
+  },
+  "dependencies": {
+    "apg-lib": "^3.2.0"
+  }
+}
